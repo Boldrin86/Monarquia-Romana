@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Teste seus conhecimentos sobre a Monarquia Romana com um quiz de perguntas e pontuação.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="jetbrains-mono-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Quiz Monarquia Romana</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+    <script src="script.js" defer></script>
+    <script src="quiz.js" defer></script>
+</head>
+
+<body class="quiz-page">
+
+    <header>
+        <div class="header-inner">
+            <a class="header-title" href="index.html" aria-label="Voltar para Monarquia Romana"><h2>Monarquia Romana</h2></a>
+            
+            <div class="main-nav">
+                <section class="quiz-dashboard" aria-label="Progresso do quiz">
+                    <div class="pontuacao-card" aria-live="polite">
+                        <span class="pontuacao-label">Acertos: </span>
+                        <p><strong id="pontuacaoValue">0</strong> <span class="pontuacao-total"><strong>/ 8</strong></span></p>
+                        
+                    </div>
+                </section>
+                
+            </div>
+
+            <div class="header-actions">
+                <a class="back-link" href="index.html">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Voltar ao resumo
+                </a>
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Ativar modo escuro" aria-pressed="false">
+                    <span class="theme-label">Modo escuro</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="quiz-main" class="quiz-main section-shell">
+
+        <section class="quiz-page-intro" aria-labelledby="quiz-title">
+            <h1 id="quiz-title">Quiz sobre a Monarquia Romana</h1>
+            <p>São 8 perguntas sobre a origem de Roma, as instituições políticas, a sociedade e os reis. Escolha uma alternativa por questão e leia a explicação após responder.</p>
+        </section>
+
+
+        <div class="quiz-list" id="quizList"></div>
+
+        
+    </main>
+
+    <footer>
+        <div class="creditos">
+            <a class="back-mobile-link" href="index.html">
+                    <i class="fa-solid fa-angles-left"></i>
+                    Voltar ao resumo
+                </a>
+            <section class="footer-creditos">
+                <h2>Créditos:</h2>
+                <a href="https://github.com/Kilogabu" class="footer-links">Github Felipe</a>
+                <a href="https://github.com/Boldrin86" class="footer-links">Github Boldrin</a>
+                <a href="https://github.com/guimaraes88" class="footer-links">Github Guimarães</a>
+                <a href="https://github.com/ACruz2512" class="footer-links">Github André</a>
+            </section>
+        </div>
+    </footer>
+
+</body>
+
+</html>
